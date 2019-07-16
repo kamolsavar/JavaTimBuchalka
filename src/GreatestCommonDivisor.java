@@ -22,9 +22,12 @@ public class GreatestCommonDivisor {
 
             }
             else{
+                int count=0;
                 for(int j=number1; j>=1; j--){
                     if(number1%j==0 && number2%j==0){
                         System.out.println(j);
+                        count=1;
+                        break;
                     }
                 }
             }
